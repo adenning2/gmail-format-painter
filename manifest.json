@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Format Painter",
+  "version": "1.0",
+  "description": "Copy and apply text formatting in Gmail.",
+  "permissions": ["scripting", "activeTab", "contextMenus"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Gmail Format Painter"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
